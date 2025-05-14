@@ -1,0 +1,132 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
+    color: #00d4ff;
+}
+
+form {
+    background-color: #1c1c1e;
+    padding: 30px;
+    max-width: 500px;
+    margin: 30px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #00d4ff;
+    background-color: #2a2a2e;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+small {
+    font-size: 12px;
+    color: #cccccc;
+    display: block;
+    margin-top: 3px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    background-color: #00d4ff;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #00aacc;
+    color: #fff;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #141e30, #243b55);
+    color: #f5f5f5;
+    margin: 0;
+    padding: 40px;
+}
+
+h2 {
+    text-align: center;
+    color: #00d4ff;
+}
+
+.status {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: #28d7a4; /* Good default */
+}
+
+.status.Warning {
+    color: #f0ad4e;
+}
+
+.status.Critical {
+    color: #d9534f;
+}
+
+.precaution {
+    margin: 30px auto;
+    padding: 20px;
+    border-left: 6px solid #f0ad4e;
+    background-color: rgba(252, 248, 227, 0.1);
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.precaution h3 {
+    color: #f0ad4e;
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #ffe;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #00d4ff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+}
