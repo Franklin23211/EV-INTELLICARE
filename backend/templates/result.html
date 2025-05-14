@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+
+    <title>Prediction Result - EV IntelliCare</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .status {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2e6da4;
+        }
+        .precaution {
+            margin-top: 20px;
+            padding: 10px;
+            border-left: 5px solid #f0ad4e;
+            background-color: #fcf8e3;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>🧾 Vehicle Health Status:</h2>
+    <p class="status">{{ status }}</p>
+
+    {% if precaution %}
+    <div class="precaution">
+        <h3>⚠️ Precautionary Measures:</h3>
+        <ul>
+            {% for line in precaution.split('<br>') %}
+                <li>{{ line }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% else %}
+    <p style="color: green;"><strong>✅ Your vehicle is in good condition. No immediate action required.</strong></p>
+    {% endif %}
+
+    <br><a href="/">🔄 Predict Again</a>
+</body>
+</html>

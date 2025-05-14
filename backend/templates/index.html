@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EV INTELLICARE</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>EV INTELLICARE</h1> <!-- Added title here -->
+    <h2>Enter Sensor Data</h2>
+    <form method="POST" action="/predict">
+        Battery Health (%): 
+        <input type="number" name="battery_health" step="1" min="0" max="100" required>
+        <small>(0–100%)</small><br><br>
+
+        Motor Temperature (°C): 
+        <input type="number" name="motor_temp" step="1" min="-20" max="150" required>
+        <small>(-20°C to 150°C)</small><br><br>
+
+        Brake Wear (%): 
+        <input type="number" name="brake_wear" step="1" min="0" max="100" required>
+        <small>(0–100%)</small><br><br>
+
+        Suspension Stress (%): 
+        <input type="number" name="suspension_stress" step="1" min="0" max="100" required>
+        <small>(0–100%)</small><br><br>
+
+        Tire Pressure (PSI): 
+        <input type="number" name="tire_pressure" step="1" min="20" max="50" required>
+        <small>(20–50 PSI)</small><br><br>
+
+        Past Failures: 
+        <input type="number" name="past_failures" min="0" max="5" required>
+        <small>(0–5 past failures)</small><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+</body>
+</html>

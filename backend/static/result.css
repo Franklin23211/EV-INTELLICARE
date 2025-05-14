@@ -1,0 +1,68 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #141e30, #243b55);
+    color: #f5f5f5;
+    margin: 0;
+    padding: 40px;
+}
+
+h2 {
+    text-align: center;
+    color: #00d4ff;
+}
+
+.status {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    color: #28d7a4; /* Good default */
+}
+
+.status.Warning {
+    color: #f0ad4e;
+}
+
+.status.Critical {
+    color: #d9534f;
+}
+
+.precaution {
+    margin: 30px auto;
+    padding: 20px;
+    border-left: 6px solid #d9534f;  /* Strong color for visibility */
+    background-color: rgba(255, 87, 34, 0.1); /* Vibrant orange background */
+    max-width: 600px;
+    border-radius: 10px;
+    color: #333; /* Dark color for text to improve contrast */
+}
+
+.precaution h3 {
+    color: #d9534f; /* Consistent color for heading */
+    margin-top: 0;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #333;  /* Dark color for better contrast with background */
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #00d4ff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fff;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+}
